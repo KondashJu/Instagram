@@ -11,9 +11,18 @@
           </form>
         </div>
         <div class="user-section">
-          <a><i class="far fa-compass"></i></a>
-          <a><i class="far fa-heart"></i></a>
-          <a><i class="far fa-user"></i></a>
+          <a><i class="fas fa-compass"></i></a>
+          <a><i class="fas fa-heart"></i></a>
+          <% if user_signed_in? %>
+            <a href="<%= destroy_user_session_path%>" data-method="delete">
+              <i class="far fa-user"></i>
+            </a>
+          <% else %>
+            <a href="<%= new_user_session_path%>">
+              <i class="fas fa-sign-in-alt"></i>
+            </a>
+          <% end %>
+  
         </div>
       </div>
     </nav>
