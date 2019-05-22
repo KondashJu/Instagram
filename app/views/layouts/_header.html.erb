@@ -1,3 +1,4 @@
+ <%= stylesheet_link_tag    'reset', media: 'all', 'data-turbolinks-track': 'reload' %>  
    <nav class="navbar navbar-light bg-light">
       <div class="container">
         <div class="logo">
@@ -13,15 +14,18 @@
         <div class="user-section">
           <a><i class="fas fa-compass"></i></a>
           <a><i class="fas fa-heart"></i></a>
-          <% if user_signed_in? %>
-            <a href="<%= destroy_user_session_path%>" data-method="delete">
-              <i class="far fa-user"></i>
-            </a>
-          <% else %>
-            <a href="<%= new_user_session_path%>">
-              <i class="fas fa-sign-in-alt"></i>
-            </a>
-          <% end %>
+            
+       <% if user_signed_in? %>
+          <a href="<%= user_path(current_user)%>">
+            <i class="fas fa-user"></i>
+          </a>
+        <% else %>
+          <a href="<%= new_user_session_path%>">
+            <i class="fas fa-sign-in-alt"></i>
+          </a>
+        <% end %>
+ 
+          
   
         </div>
       </div>
@@ -35,14 +39,11 @@
     <footer class="container footer">
       <nav class="navbar d-flex">
         <ul>
-          <li>ABOUT US
-          </li>
-          <li>SUPPORT</li>
-          <li>JOBS</li>
-          <li>PRIVACY</li>
-          <li>PROFILES</li>
-          <li>HASHTAGS</li>
-          <li>LANGUAGE</li>
+          <li><a href="/">ABOUT US</a></li>
+          <li><a href="/">SUPPORT</a></li>
+          <li><a href="/">JOBS</a></li>
+          <li><a href="/">PRIVACY</a></li>
+          <li><a href="/">PROFILES</a></li>
         </ul>
         <p> © 2019 INSTAGRAM </p>
       </nav>

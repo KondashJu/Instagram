@@ -13,9 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
  @import "bootstrap";
  @import "font-awesome-sprockets";
  @import "font-awesome";
+ @import "users";
+
 
  .container{
   max-width: 1000px;
@@ -34,12 +37,13 @@
 }
 .search-form{
   input{
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
+    height: 25px;
   }
 }
 .footer{
-  font-size: 12px;
+  font-size: 15px;
   padding-top: 30px;
   ul{
     padding-left: 0;
@@ -48,8 +52,16 @@
       padding-right: 15px;
       color: #212121;
     }
+    > li a{
+    color: #212121;
+    }
+    > li a:hover{
+    text-decoration: none;
+    color: #bf360c;
+    }
   }
   p{
     color: #616161;
   }
 }
+
