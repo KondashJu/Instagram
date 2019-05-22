@@ -1,7 +1,5 @@
+ <%= stylesheet_link_tag    'home', media: 'all', 'data-turbolinks-track': 'reload' %>  
 <p id="notice"><%= notice %></p>
-
-
-
 
   <tbody>
     <% @articles.each do |article| %>
@@ -14,8 +12,9 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+
 
 <br>
-
-<%= link_to 'New Article', new_article_path %>
+<div class="form">
+<a href="/articles/new">New Post</a>
+</div>

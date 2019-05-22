@@ -1,0 +1,21 @@
+.form {
+  background: #fafafa;
+  padding: 4em 4em 4em;
+  max-width: 400px;
+  margin: 0px auto 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+a {
+	font-size: 30px;
+    position: relative;
+    left: 28%;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #bf360c;
+}

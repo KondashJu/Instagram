@@ -22,9 +22,12 @@
 
  .container{
   max-width: 1000px;
+
 }
 
 .user-section{
+  position: relative;
+  right: 6%;
   a{
     padding-left: 15px;
   }
@@ -36,6 +39,8 @@
 
 }
 .search-form{
+  position: relative;
+  right: 6%;
   input{
     font-size: 15px;
     text-align: center;
@@ -43,6 +48,8 @@
   }
 }
 .footer{
+  position: relative;
+  right: 6%;
   font-size: 15px;
   padding-top: 30px;
   ul{
@@ -54,6 +61,8 @@
     }
     > li a{
     color: #212121;
+    font-size: 15px;
+    padding: 0px;
     }
     > li a:hover{
     text-decoration: none;
@@ -65,3 +74,13 @@
   }
 }
 
+.form-upload{
+  border: 1px solid #dbdbdb;
+  height: auto;
+  margin: auto 160px;
+  padding: 30px;
+  border-radius: 3px;
+  input[type='text']{
+    width: 100%;
+  }
+}
